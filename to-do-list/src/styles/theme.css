@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.Todo-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-add-sec {
+    margin-bottom: 20px;
+}
+
+.todo-task-display {
+    margin-top: 20px;
+}
+
+.todo-task-display ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-task-display li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.todo-task-display li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.theme-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.focus-mode {
+    background-image: url('../assets/nature.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stopwatch button {
+    margin: 5px;
+}
+
+.motivation-quote {
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.calendar {
+    margin: 20px 0;
+}
+
+.pie-chart {
+    width: 100%;
+    height: 300px;
+}
